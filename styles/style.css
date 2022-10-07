@@ -262,9 +262,6 @@ html {
 
 html {
   font-size: 125%;
-  /* color: white; */
-  /* font-family: 'Josefin Sans', sans-serif; */
-  /* background-color: #28323C; */
 }
 
 h1,
@@ -297,7 +294,7 @@ img {
 }
 
 section {
-  padding: 100px;
+  padding: 50px;
 }
 
 h1,
@@ -375,4 +372,47 @@ nav li {
 
 h1 {
   font-size: 4rem;
+}
+
+.about {
+  background: #500801;
+}
+
+.aboutFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutImage {
+  width: 25%;
+  padding-right: 10px;
+}
+
+.aboutImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutText {
+  width: 75%;
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutText button {
+  background: #1D0303;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }

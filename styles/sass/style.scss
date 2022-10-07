@@ -2,13 +2,10 @@
 
 $mainColor: #815600;
 $otherColor: #500801;
+$buttonBackground: #1D0303;
 
 html {
     font-size: 125%;
-    /* color: white; */
-    /* font-family: 'Josefin Sans', sans-serif; */
-    /* background-color: #28323C; */
-
 }
 
 h1,
@@ -41,7 +38,7 @@ img {
 }
 
 section {
-    padding: 100px;
+    padding: 50px;
 }
 
 h1,
@@ -111,4 +108,38 @@ nav li {
 h1 {
     font-size: 4.0rem;
 
+}
+
+// ABOUT SECTION STYLES
+
+.about {
+    background: $otherColor;
+}
+
+.aboutFlex {
+    display: flex;
+
+}
+
+.aboutImage {
+    width: 25%;
+    padding-right: 10px;
+}
+
+.aboutImage img {
+    object-fit: cover;
+}
+
+.aboutText {
+    width: 75%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aboutText button {
+    background: $buttonBackground;
+    border: none;
+    width: fit-content;
 }
