@@ -19,12 +19,12 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
-                    <li><a href="#content">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <!-- END .navwrap -->
-            <section id="home" class="wrapper headerFlex">
-                <div class="homeFlex">
+            <section id="home" class="home">
+                <div class="wrapper homeFlex">
                     <h1>Galass Handbags</h1>
                     <img src="./galass-handbags-assets/group-bags.png"
                         alt="Three handbags made of premium vegan leather being displayed in different sizes, styles and colours">
@@ -40,7 +40,7 @@
         <section id="about" class="about">
             <div class="wrapper aboutFlex">
                 <div class="aboutImage">
-                    <img src="./galass-handbags-assets/left-photo.jpg"
+                    <img src="./galass-handbags-assets/square-photo.jpg"
                         alt="A stylish green handbag being displayed on a model's arm">
                 </div>
                 <!-- END .aboutFlex -->
@@ -78,6 +78,7 @@
         <!-- START section blog -->
         <section id="blog" class="blog">
             <div class="wrapper blogFlex">
+                <!-- might not need the div or ul here. come back later to experiment with code -->
                 <ul class="blogInfo">
                     <li>
                         <h2>Fall Trends</h2>
@@ -104,6 +105,34 @@
                 </ul>
         </section>
         <!-- END .blog #blog -->
+        <section id="contact" class="contact">
+            <div class="wrapper contactFlex">
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+                <div>
+                    <h3>Stay updated</h3>
+                    <form action="#" method="#" class="myForm" name="myForm">
+
+                        <label for="userEmail">Subscribe to our newsletter to stay updated</label>
+                        <input type="text" id="userEmail" name="userEmail">
+
+                        <button type="submit">Subscribe</button>
+
+                    </form>
+                    <!-- form here -->
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>info@email | 123 - 456 - 7890</p>
+                    <p>123 some road, Toronto, ON</p>
+                    <p>A5A 5A5, Canada</p>
+                </div>
+            </div>
+        </section>
     </main>
 
 
