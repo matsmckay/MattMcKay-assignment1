@@ -2,7 +2,7 @@
 
 $mainColor: #815600;
 $otherColor: #500801;
-$buttonBackground: #1D0303;
+$buttonBackground1: #1D0303;
 
 html {
     font-size: 125%;
@@ -139,7 +139,7 @@ h1 {
 }
 
 .aboutText button {
-    background: $buttonBackground;
+    background: $buttonBackground1;
     border: none;
     width: fit-content;
 }
@@ -183,3 +183,43 @@ h2 {
 h3 {
     font-size: 2.25rem;
 }
+
+// BLOG SECTION STYLES
+
+.blog {
+    background-color: $mainColor;
+    padding: 0;
+    width: 100%;
+}
+
+.blogFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blogFlex li {
+    width: 50%;
+}
+
+.blogFlex img {
+    width: max-width;
+}
+
+.textBox1,
+.textBox2 {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blogFlex button {
+    background: $buttonBackground;
+    border: none;
+    width: fit-content;
+}
+
+// .blogFlex img {
+//     max-width: fit-content;
+
+// }

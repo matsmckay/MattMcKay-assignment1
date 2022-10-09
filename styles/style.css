@@ -458,3 +458,48 @@ h2 {
 h3 {
   font-size: 2.25rem;
 }
+
+.blog {
+  background-color: #815600;
+  padding: 0;
+  width: 100%;
+}
+
+.blogFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blogFlex li {
+  width: 50%;
+}
+
+.blogFlex img {
+  width: max-width;
+}
+
+.textBox1,
+.textBox2 {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogFlex button {
+  background: #1D0303;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
