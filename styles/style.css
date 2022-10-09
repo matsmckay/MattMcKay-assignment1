@@ -473,6 +473,16 @@ h3 {
       flex-wrap: wrap;
 }
 
+.rowReverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 .blogFlex li {
   width: 50%;
 }

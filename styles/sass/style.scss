@@ -2,7 +2,7 @@
 
 $mainColor: #815600;
 $otherColor: #500801;
-$buttonBackground1: #1D0303;
+$buttonBackground: #1D0303;
 
 html {
     font-size: 125%;
@@ -139,7 +139,7 @@ h1 {
 }
 
 .aboutText button {
-    background: $buttonBackground1;
+    background: $buttonBackground;
     border: none;
     width: fit-content;
 }
@@ -195,6 +195,11 @@ h3 {
 .blogFlex {
     display: flex;
     flex-wrap: wrap;
+}
+
+.rowReverse {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .blogFlex li {
