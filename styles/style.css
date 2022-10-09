@@ -271,6 +271,7 @@ p,
 ul {
   margin: 0;
   padding: 0;
+  color: #FFFFFF;
 }
 
 ul {
@@ -303,6 +304,7 @@ h3,
 h4,
 button {
   font-family: "Petit Formal Script", cursive;
+  color: #FFFFFF;
 }
 
 nav,
@@ -512,4 +514,17 @@ h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.contact {
+  background: #500801;
+}
+
+.contactFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }

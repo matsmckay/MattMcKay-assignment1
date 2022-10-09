@@ -3,6 +3,7 @@
 $mainColor: #815600;
 $otherColor: #500801;
 $buttonBackground: #1D0303;
+$textColor: #FFFFFF;
 
 html {
     font-size: 125%;
@@ -15,6 +16,7 @@ p,
 ul {
     margin: 0;
     padding: 0;
+    color: $textColor;
 }
 
 ul {
@@ -47,6 +49,7 @@ h3,
 h4,
 button {
     font-family: 'Petit Formal Script', cursive;
+    color: $textColor;
 }
 
 nav,
@@ -224,7 +227,13 @@ h3 {
     width: fit-content;
 }
 
-// .blogFlex img {
-//     max-width: fit-content;
+// CONTACT SECTION CSS
 
-// }
+.contact {
+    background: $otherColor;
+}
+
+.contactFlex {
+    display: flex;
+    justify-content: space-between;
+}
