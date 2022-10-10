@@ -1,4 +1,4 @@
-@import 'setup';
+@use 'setup';
 
 $mainColor: #815600;
 $otherColor: #500801;
@@ -76,6 +76,7 @@ button {
 
 header {
     background: $mainColor;
+    // height: 100vh;
 }
 
 .home {
@@ -242,9 +243,8 @@ h3 {
     justify-content: space-between;
 }
 
-h4 {
-    font-size: 2.0rem;
-    margin: 0;
+.contactForm h3 {
+    padding-bottom: 20px;
 }
 
 .contactNav,
@@ -256,10 +256,20 @@ h4 {
     width: calc((100% / 3) - 20px);
 }
 
+h4 {
+    font-size: 2.0rem;
+    margin: 0;
+}
+
 label {
     color: $textColor;
     display: flex;
+    width: 102%;
 }
+
+// input {
+//     padding-left: 20px;
+// }
 
 .contactInfo {
     text-align: right;
