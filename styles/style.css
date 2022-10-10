@@ -323,6 +323,10 @@ p {
   font-weight: 300;
 }
 
+button {
+  padding: 5px 10px;
+}
+
 header {
   background: #815600;
 }
@@ -527,4 +531,48 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+h4 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.contactNav,
+.contactForm,
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(33.3333333333% - 20px);
+}
+
+label {
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactInfo {
+  text-align: right;
+}
+
+.contactForm button {
+  background: #1D0303;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  color: #FFFFFF;
+  background: #1D0303;
+  padding: 5px 0;
 }
