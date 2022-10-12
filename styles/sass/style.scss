@@ -209,6 +209,12 @@ h3 {
 .rowReverse {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+
+.rowReverse li {
+    width: 50%;
 }
 
 .blogFlex li {
@@ -228,6 +234,12 @@ h3 {
 }
 
 .blogFlex button {
+    background: $buttonBackground;
+    border: none;
+    width: fit-content;
+}
+
+.rowReverse button {
     background: $buttonBackground;
     border: none;
     width: fit-content;
@@ -376,5 +388,17 @@ footer {
 
     h4 {
         font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 770px) {
+    .blogFlex li {
+        width: 100%;
+        align-items: center;
+    }
+
+    .rowReverse li {
+        width: 100%;
+        align-items: center;
     }
 }

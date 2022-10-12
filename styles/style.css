@@ -489,6 +489,12 @@ h3 {
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.rowReverse li {
+  width: 50%;
 }
 
 .blogFlex li {
@@ -515,6 +521,14 @@ h3 {
 }
 
 .blogFlex button {
+  background: #1D0303;
+  border: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.rowReverse button {
   background: #1D0303;
   border: none;
   width: -webkit-fit-content;
@@ -595,6 +609,7 @@ footer {
 
   h2 {
     font-size: 2.3rem;
+
   }
 
   h3 {
@@ -640,8 +655,34 @@ footer {
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
+
+  .contactFlex {
+    flex-direction: column;
+  }
+
+  .contactNav {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contactForm,
+  .contactInfo {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contactForm {
+    padding: 15px 0;
+  }
+
+  .contactForm h3 {
+    padding-bottom: 0;
+  }
+
 }
 
 @media (max-width: 820px) {
@@ -668,7 +709,81 @@ footer {
 
 @media (max-width: 770px) {
 
+  header {
+    height: 50vh;
+  }
+
   .blogFlex li {
-    width: 100%
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .rowReverse li {
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .aboutFlex {
+    flex-wrap: wrap;
+  }
+
+  .aboutImage,
+  .aboutText {
+    width: 100%;
+    align-items: center;
+  }
+
+  .about h2 {
+    padding-top: 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    /* padding-bottom: 10px; */
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  p {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 660px) {
+
+  .homeFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imageGalleryFlex {
+    align-items: center;
+  }
+
+  .imageGalleryFlex li {
+    width: 100%;
+  }
+
+  .aboutMenuFlex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 1.9rem;
   }
 }
